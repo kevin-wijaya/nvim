@@ -24,6 +24,6 @@ vim.cmd [[
   highlight CursorLineNr guifg=#F2AF62 ctermfg=yellow
 ]]
 
-
+g.lazyvim_picker = "telescope"
 
 

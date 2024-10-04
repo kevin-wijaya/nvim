@@ -19,7 +19,6 @@ local header_part = {
 	[[                                                                       ]],
 }
 
-
 local center_part = {
 	{ action = "Telescope find_files",      desc = " Find File    ", icon = " ", key = "f" },
 	{ action = "ene | startinsert",         desc = " New File     ", icon = " ", key = "n" },
@@ -35,10 +34,22 @@ for _, entry in ipairs(center_part) do
 	for k, v in pairs(center_format) do
 		entry[k] = v
 	end
-	entry['desc'] = entry['desc'] .. "                 "
+	entry['desc'] = entry['desc'] .. string.rep(" ", 40 - #entry['desc'])
 end
 
-local footer_part = {}
+local footer_part = function()
+	local stats = require("lazy").stats()
+	local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
+	return {   
+        [[                                                                                              ]],
+        [[                                                                                              ]],
+        [[                                                                                              ]],
+        [[ ]] .. "loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms .. " ms" .. [[ ]],
+        [[                                                                                              ]],	
+        [[                                                                                              ]],	
+        [[                                                                                              ]],	
+	}
+end
 
 return {
 	{
@@ -51,7 +62,7 @@ return {
 				config = {
 					header = header_part,
 					center = center_part,
-					-- footer = footer_part,
+					footer = footer_part,
 				}
 			}
 		end,
