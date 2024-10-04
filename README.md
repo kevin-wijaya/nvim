@@ -1,0 +1,1 @@
+This repository contains the custom Neovim configuration by Kevin Wijaya

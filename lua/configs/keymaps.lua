@@ -15,7 +15,7 @@ map("n", "<C-X>", "dd", map_otpions )
 -- map("n", "<C-V>", '"+p', map_otpions )
 
 map("n", "<leader>e", ":NvimTreeToggle<CR>", map_otpions )
-map("n", "<leader>t", ":terminal<CR>:setnonumber<CR>a", map_otpions )
+map("n", "<leader>t", ":terminal<CR>:set nonumber<CR>a", map_otpions )
 
 map("n", "<leader>fr", ":%s/", map_otpions )
 

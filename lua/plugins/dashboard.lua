@@ -24,7 +24,6 @@ local center_part = {
 	{ action = "ene | startinsert",         desc = " New File     ", icon = " ", key = "n" },
 	{ action = "Telescope oldfiles",        desc = " Recent Files ", icon = " ", key = "r" },
 	{ action = "Telescope live_grep",       desc = " Find Text    ", icon = " ", key = "g" },
-	{ action = "e ~/.config/nvim/init.lua", desc = " Config       ", icon = " ", key = "c" },
 	{ action = "Lazy",                      desc = " Lazy         ", icon = "󰒲 ", key = "l" },
 	{ action = "qa",                        desc = " Quit         ", icon = " ", key = "q" },
 }
