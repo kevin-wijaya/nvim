@@ -22,6 +22,8 @@ map("n", "<leader>fr", ":%s/", map_otpions )
 map("n", "<M-h>", "20zh", map_otpions )
 map("n", "<M-l>", "20zl", map_otpions )
 
+map("n", "<C-a>", "gg0<S-v><S-G>", map_otpions)
+
 -- visual mode --
 map("v", "<C-Y>", '"+y', map_otpions )
 

@@ -20,10 +20,6 @@ vim.g.loaded_netrwPlugin = 1
 
 opt.cursorline = true
 
-vim.cmd [[
-  highlight CursorLineNr guifg=#F2AF62 ctermfg=yellow
-]]
-
 g.lazyvim_picker = "telescope"
 
 
